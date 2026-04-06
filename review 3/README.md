@@ -1,34 +1,40 @@
-📌 Project Title
+# Human Action Recognition using GAN-Based Autoencoder
 
-Human Action Recognition using GAN-based Autoencoder
+## 📖 Overview
+This project implements a GAN-based Autoencoder (GAN-AE) for human action recognition. The model learns to reconstruct video frames and uses reconstruction patterns to understand different actions.
 
-📖 Overview
+## ⚙️ Methodology
+- Extract frames from videos
+- Preprocess images (resize, normalize)
+- Train Generator (Autoencoder) and Discriminator
+- Use reconstruction loss for learning action features
 
-This project implements a GAN-based Autoencoder (GAN-AE) for human action recognition. The model learns to reconstruct input video frames and uses reconstruction error to distinguish between different actions.
+## 🧠 Model Architecture
+- Encoder: Extracts latent features
+- Decoder: Reconstructs frames
+- Discriminator: Distinguishes real vs generated frames
 
-⚙️ Methodology
-Extract frames from videos
-Preprocess (resize, normalize)
-Train:
-Generator (Autoencoder)
-Discriminator (real vs reconstructed frames)
-Use reconstruction loss for action understanding
-🧠 Model Architecture
-Encoder → compress spatial features
-Decoder → reconstruct frames
-Discriminator → adversarial training
-📂 Input
-Video frames from UCF101 (subset of 25 classes)
-📤 Output
-Reconstructed frames
-Loss curves (Generator & Discriminator)
-Action classification (based on reconstruction patterns)
-📊 Evaluation Metrics
-Reconstruction Loss
-PSNR (optional)
-SSIM (optional)
-🚀 How to Run
-pip install -r requirements.txt
+## 📂 Input
+- Video frames from UCF101 dataset (25 classes subset)
+
+## 📤 Output
+- Reconstructed frames
+- Generator and Discriminator loss
+- Learned action representations
+
+## 📊 Evaluation Metrics
+- Reconstruction Loss
+- PSNR (optional)
+- SSIM (optional)
+
+## 🚀 How to Run
+pip install -r requirements.txt  
+jupyter notebook gan-ae-action-recognition.ipynb
+
+## 📌 Key Features
+- Works with limited labeled data
+- Captures spatial patterns
+- Uses adversarial learning
 
 Run notebook:
 
