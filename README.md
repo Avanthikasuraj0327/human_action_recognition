@@ -219,6 +219,14 @@ This project highlighted a few important deep learning deployment lessons:
 - log confusion matrices in the app
 - export prediction reports automatically
 
+## 📥 Download Pretrained Models
+
+Download models from:
+https://drive.google.com/drive/folders/1oA5g2CPEBgjN02WTq5xJT_GwhMtCgIFi?usp=sharing
+
+Place them in:
+project/
+
 ## Academic Context
 
 This project was created as part of a deep learning academic mini project on multi-model human action recognition and deployment.
